@@ -1,0 +1,196 @@
+﻿*{
+    box-sizing: border-box;
+}
+a, abbr, address, blockquote, body, caption, cite, code, dd, del, dfn, 
+div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, 
+img, ins, label, legend, li, object, ol, p, pre, q, small, span, strong, 
+sub, sup, table, tbody, td, tfoot, th, thead, tr, ul{
+    border:0;
+    margin: 0;
+}
+body{
+    overflow: auto;
+    letter-spacing: 2px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+#background{
+    position: relative;
+    padding: calc(100vw/15);
+    height: 100vh;
+    /* background: url('../images/r-bg.jpg') no-repeat top/100% 100%; */
+    background-image: url('../images/r-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+.myInfo{
+    margin: 20% auto 2%;
+}
+.phone{
+    width:100%;
+    padding: 2%;
+    margin: 20% auto ;
+}
+
+.white{
+    color:#fff;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.red{
+    color:#de0e0e;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/**
+ * 表格样式
+ */
+ .rank{
+     width:100%;
+     margin: 2% auto;
+     height: calc(100vh/3.2);
+ }
+.caption{
+    color: #fff;
+    padding:27px 0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0,.3);
+    font-size: 20px;
+    font-weight: 600px;
+    /* background: url('../images/y3-3.png') no-repeat top/100% 100%; */
+    background-image: url('../images/y3-3.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+}
+
+.rankContent{
+    width:100%;
+    height:calc(100vh/5);
+    overflow: hidden;
+}
+
+.back{
+    position: absolute;
+    bottom: 1%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    animation:upAndDown 1s linear infinite;
+}
+.back a{
+    display: block;
+    padding: calc(100vh/43) 0px;
+    border:2px solid #fff;
+    border-radius: 10px;
+}
+
+/* tr{
+	/* border-bottom:2px dotted #f0f0f0; 
+}
+
+tr:nth-child(odd){/*偶数行添加背景*/
+    /* background: #f0f0f0; 
+} */
+.caption+table{
+    padding: 0;
+    height: auto;
+}
+table{
+    position: relative;
+    width:100%;
+    height: 100%;
+	border-collapse:collapse;
+    border:none;
+    text-align: center;
+}
+
+td ,th {
+    border:0px;
+    width:calc(100vw/20);
+    max-width: calc(100vw/20);
+}
+
+td{
+    height: calc(100vh/15);
+    font-size: calc(100vw/35);
+}
+
+th{
+	/* background: #1090e6; */
+	/* box-shadow: 2px 2px 4px rgba(15, 90, 90, 0.85); */
+    color: #b50202;
+    font-size: calc(100vw/32);
+    /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+    text-indent: 5px;
+}
+
+tr{
+    position: relative;
+	border-bottom:2px solid #f0f0f0;
+}
+
+tr:last-child{/*因为要配合<tr><th></th></tr>使用列标题上不能有边框*/
+	border:none;
+}
+
+@-webkit-keyframes upAndDown{
+    0%{
+        bottom:1%;
+    }
+    50%{
+        bottom:2%;
+    }
+    100%{
+        bottom:1%;
+    }
+}
+@-moz-keyframes upAndDown{
+    0%{
+        bottom:1%;
+    }
+    50%{
+        bottom:2%;
+    }
+    100%{
+        bottom:1%;
+    }
+}
+@-ms-keyframes upAndDown{
+    0%{
+        bottom:1%;
+    }
+    50%{
+        bottom:2%;
+    }
+    100%{
+        bottom:1%;
+    }
+}
+@-o-keyframes upAndDown{
+    0%{
+        bottom:1%;
+    }
+    50%{
+        bottom:2%;
+    }
+    100%{
+        bottom:1%;
+    }
+}
+@keyframes upAndDown{
+    0%{
+        bottom:1%;
+    }
+    50%{
+        bottom:2%;
+    }
+    100%{
+        bottom:1%;
+    }
+}

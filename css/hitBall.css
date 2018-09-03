@@ -1,0 +1,79 @@
+﻿*{
+    box-sizing: border-box;
+}
+a, abbr, address, blockquote, body, caption, cite, code, dd, del, dfn, 
+div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, 
+img, ins, label, legend, li, object, ol, p, pre, q, small, span, strong, 
+sub, sup, table, tbody, td, tfoot, th, thead, tr, ul{
+    border:0;
+    margin: 0;
+}
+body{
+    overflow: auto;
+    letter-spacing: 2px;
+}
+a{
+    text-decoration: none;
+}
+#background{
+    position: relative;
+    height: 100vh;
+    /* background: url('../images/y3-1.jpg') no-repeat top/100% 100%; */
+    background-image: url('../images/y3-1.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent; /* For some Androids,个人感觉是低版本的安卓，4.0以下 */  
+}
+#gamePanel{
+    overflow: hidden;
+}
+.head{
+    width:100%;
+    padding: calc(100vh/30);
+    text-align: center;
+    background: rgba(0,0,0,.3);
+    z-index: 2;
+    font-size: calc(100vw/23);
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
+.balloon{
+    position: absolute;
+    background: #f10505;
+    border-radius: 50% 50% 25% 50%;
+    transform: rotate(45deg);
+    box-shadow: -8px -8px 80px -8px #222 inset ;/*x y 羽化 半径 阴影颜色 内羽化*/
+    cursor: pointer;
+    color: gold;
+}
+.balloon::after{
+    position:absolute;
+    content: ''; 
+    bottom:3px;
+    right:3px;
+    border: 8px solid transparent;/*透明色*/
+    /* border-right-color:#e1f502; */
+    transform:rotate(45deg);
+    border-radius: 50%;
+}
+.tips{
+    position:absolute;
+    top:20%;
+    left:10%;
+    transform: rotate(-45deg);
+}
+.white{
+    color:#fff;
+}
+.red{
+    font-weight: 600;
+    color:#eb2e2e;
+}
+

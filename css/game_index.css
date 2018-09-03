@@ -1,0 +1,118 @@
+﻿*{
+    box-sizing: border-box;
+}
+a, abbr, address, blockquote, body, caption, cite, code, dd, del, dfn, 
+div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, 
+img, ins, label, legend, li, object, ol, p, pre, q, small, span, strong, 
+sub, sup, table, tbody, td, tfoot, th, thead, tr, ul{
+    border:0;
+    margin: 0;
+}
+body{
+    overflow: auto;
+    letter-spacing: 2px;
+}
+a{
+    text-decoration: none;
+}
+#background{
+    position: relative;
+    padding: calc(100vw/15);
+    height: 100vh;
+    /* background: url('../images/bg-min.jpg') no-repeat top/100% 100%; */
+    background-image: url('../images/bg-min.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    
+}
+#title{
+    margin: 0px auto;
+    text-align: center;
+}
+#title h2{
+    font-size: calc(100vw/15);
+    line-height: 9.1;
+}
+#title h1{
+    font-size: calc(100vw/13);
+}
+.white{
+    color:#fff;
+}
+.grade{
+    text-align: center;
+}
+#start{
+    position: absolute;
+    left:6%;
+    width:80%;
+    height: 24%;
+    /* background:url('../images/btn.png') no-repeat top/100% 100%; */
+    background-image: url('../images/btn.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+    font-size: calc(100vw/16);
+    font-weight: 600;
+    text-align: center;
+    padding: calc(100vh/14) 0px;
+    animation:upAndDown 1s linear infinite;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color:transparent; /* For some Androids,个人感觉是低版本的安卓，4.0以下 */  
+}
+@-webkit-keyframes upAndDown{
+    0%{
+        bottom:15%;
+    }
+    50%{
+        bottom:14%;
+    }
+    100%{
+        bottom:15%;
+    }
+}
+@-moz-keyframes upAndDown{
+    0%{
+        bottom:15%;
+    }
+    50%{
+        bottom:14%;
+    }
+    100%{
+        bottom:15%;
+    }
+}
+@-ms-keyframes upAndDown{
+    0%{
+        bottom:15%;
+    }
+    50%{
+        bottom:14%;
+    }
+    100%{
+        bottom:15%;
+    }
+}
+@-o-keyframes upAndDown{
+    0%{
+        bottom:15%;
+    }
+    50%{
+        bottom:14%;
+    }
+    100%{
+        bottom:15%;
+    }
+}
+@keyframes upAndDown{
+    0%{
+        bottom:15%;
+    }
+    50%{
+        bottom:14%;
+    }
+    100%{
+        bottom:15%;
+    }
+}
